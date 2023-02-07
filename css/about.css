@@ -1,0 +1,5952 @@
+<style
+  data-framer-css-ssr-minified=""
+  data-framer-components="framer-9yp6u"
+  > html,
+body,
+#main {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+#__framer-badge-container {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  pointer-events: none;
+  z-index: 314159;
+}
+
+.__framer-badge {
+  pointer-events: auto;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.cyrillic-ext-BHDA65O4.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.cyrillic-Q5IXHU2O.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.greek-ext-VVOQA2NE.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.greek-E3WNEUH6.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.latin-ext-QVNMTOLY.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.latin-EDQEJQOT.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.vietnamese-SLR4GGEV.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.cyrillic-ext-7NWKXNAT.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.cyrillic-IBWUD6RJ.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.greek-ext-HUMDTRBU.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.greek-ZLLHEEN3.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.latin-ext-ZCER6HD7.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.latin-3OBDJBJN.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.vietnamese-BAS3ZFFK.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.cyrillic-ext-G3OTPKE4.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.cyrillic-JO7ZJTP6.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.greek-ext-N63XCCK3.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.greek-5GVUXSXZ.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.latin-ext-X6LBU6MW.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.latin-MWCDDLD2.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.vietnamese-A33UQJMW.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.cyrillic-ext-CFTLRB35.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.cyrillic-KKLZBALH.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.greek-ext-ULEBLIFV.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.greek-IRHSNFQB.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.latin-ext-H3RHMAZJ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.latin-QS7N4ZZG.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.vietnamese-MXHTBSXJ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.cyrillic-ext-M4WHNGTS.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.cyrillic-JVU2PANX.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.greek-ext-4KCQBEIZ.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.greek-DPOQGN7L.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.latin-ext-ZMERW7ZK.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.latin-VQJD3OLF.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.vietnamese-X4AWGW4Q.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.cyrillic-ext-C7KWUKA7.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.cyrillic-JWV7SOZ6.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.greek-ext-FBKSFTSU.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.greek-EQ3PSENU.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.latin-ext-CACXSXGV.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.latin-LLEL7U5D.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.vietnamese-ZTDSV2SC.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.cyrillic-ext-XOTVL7ZR.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.cyrillic-6LOMBC2V.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.greek-ext-WXWSJXLB.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.greek-YRST7ODZ.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.latin-ext-QBBV6CYW.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.latin-4I3F5GTQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.vietnamese-HEPWLTAI.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.cyrillic-ext-7Q6SVIPE.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.cyrillic-JSLPE6KW.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.greek-ext-6OYGJJV7.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.greek-SHW2FPC4.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.latin-ext-T5IOKZ6Y.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.latin-4GLOTAOX.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.vietnamese-OB752BR3.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.cyrillic-ext-TU4ITVTR.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.cyrillic-JX7CGTYD.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.greek-ext-LS3GCBFI.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.greek-ZWCJHBP5.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.latin-ext-OD4UQNQ5.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.latin-CME25L2C.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.vietnamese-LGZI5AXH.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.cyrillic-ext-2RGKWUBV.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.cyrillic-TDYIP5HV.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.greek-ext-WR4TIDYZ.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.greek-V3WZMSP7.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.latin-ext-WIF3EWIU.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.latin-GQ6JSQHZ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.vietnamese-EXKZI3ZQ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.cyrillic-ext-OVCHMVPD.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.cyrillic-BRDZE5UH.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.greek-ext-YV64YFFH.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.greek-EJVCLASM.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.latin-ext-TQ6BUUIF.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.latin-DQB5ULPZ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.vietnamese-ZROUUNB6.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.cyrillic-ext-C2S5XS3D.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.cyrillic-E7CYPW5D.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.greek-ext-ROSAFPGE.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.greek-PAWWH37Z.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.latin-ext-VHQYWHFY.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.latin-2ARTBVYA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.vietnamese-YIU26ZRL.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.cyrillic-ext-YDGMJOJO.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.cyrillic-BFOVMAQB.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.greek-ext-4KOU3AHC.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.greek-OJTBJNE6.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.latin-ext-K2XGSJCM.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.latin-AIKHW5CG.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.vietnamese-DCLWER4C.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.cyrillic-ext-QYBZQ2NF.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.cyrillic-ZHAJHZCC.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.greek-ext-W5ABYGZR.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.greek-RGNSYVNV.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.latin-ext-WK423AVP.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.latin-FWZIC3EI.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.vietnamese-LIQM27Y3.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.cyrillic-ext-MEHHCDC3.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.cyrillic-YACNRNDE.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.greek-ext-GFL7KADI.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.greek-5W77OPRT.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.latin-ext-N4SR6LJR.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.latin-4GMGNZ6R.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.vietnamese-ATX74R5I.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.cyrillic-ext-PEYDHC3S.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.cyrillic-7EIL6JWG.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.greek-ext-3DJOYQMH.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.greek-TJBTLTT7.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.latin-ext-YU77EYKZ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.latin-CL4IO3NJ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.vietnamese-FSUE3JZL.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.cyrillic-ext-ACWDZ3VD.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.cyrillic-ZKBSDAI2.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.greek-ext-3CY5DPTP.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.greek-YL5CC63W.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.latin-ext-RHZYVEID.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.latin-QR3SJDCJ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.vietnamese-XGJJIA2K.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.cyrillic-ext-TRM4ITYR.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.cyrillic-FPHIQVZS.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.greek-ext-JTGUUSP5.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.greek-LUNA3RFO.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.latin-ext-M4COUICR.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.latin-TRVQJZ43.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.vietnamese-M7OJ4HUG.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCAIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCkIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCIIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCAIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCkIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCIIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCAIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCkIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCIIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCAIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCkIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCIIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCAIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCkIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCIIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCAIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCkIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCIIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT5lu.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+[data-framer-component-type] {
+  position: absolute;
+}
+
+[data-framer-component-type="Text"] {
+  cursor: inherit;
+}
+
+[data-framer-component-text-autosized] * {
+  white-space: pre;
+}
+
+[data-framer-component-type="Text"] > * {
+  text-align: var(--framer-text-alignment, start);
+}
+
+[data-framer-component-type="Text"] span span,
+[data-framer-component-type="Text"] p span,
+[data-framer-component-type="Text"] h1 span,
+[data-framer-component-type="Text"] h2 span,
+[data-framer-component-type="Text"] h3 span,
+[data-framer-component-type="Text"] h4 span,
+[data-framer-component-type="Text"] h5 span,
+[data-framer-component-type="Text"] h6 span {
+  display: block;
+}
+
+[data-framer-component-type="Text"] span span span,
+[data-framer-component-type="Text"] p span span,
+[data-framer-component-type="Text"] h1 span span,
+[data-framer-component-type="Text"] h2 span span,
+[data-framer-component-type="Text"] h3 span span,
+[data-framer-component-type="Text"] h4 span span,
+[data-framer-component-type="Text"] h5 span span,
+[data-framer-component-type="Text"] h6 span span {
+  display: unset;
+}
+
+[data-framer-component-type="Text"] div div span,
+[data-framer-component-type="Text"] a div span,
+[data-framer-component-type="Text"] span span span,
+[data-framer-component-type="Text"] p span span,
+[data-framer-component-type="Text"] h1 span span,
+[data-framer-component-type="Text"] h2 span span,
+[data-framer-component-type="Text"] h3 span span,
+[data-framer-component-type="Text"] h4 span span,
+[data-framer-component-type="Text"] h5 span span,
+[data-framer-component-type="Text"] h6 span span,
+[data-framer-component-type="Text"] a {
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  font-weight: min(
+    calc(var(--framer-font-weight-increase, 0) + var(--font-weight, 400)),
+    900
+  );
+  color: var(--text-color);
+  letter-spacing: var(--letter-spacing);
+  font-size: var(--font-size);
+  text-transform: var(--text-transform);
+  text-decoration: var(--text-decoration);
+  line-height: var(--line-height);
+}
+
+[data-framer-component-type="Text"] div div span,
+[data-framer-component-type="Text"] a div span,
+[data-framer-component-type="Text"] span span span,
+[data-framer-component-type="Text"] p span span,
+[data-framer-component-type="Text"] h1 span span,
+[data-framer-component-type="Text"] h2 span span,
+[data-framer-component-type="Text"] h3 span span,
+[data-framer-component-type="Text"] h4 span span,
+[data-framer-component-type="Text"] h5 span span,
+[data-framer-component-type="Text"] h6 span span,
+[data-framer-component-type="Text"] a {
+  --font-family: var(--framer-font-family);
+  --font-style: var(--framer-font-style);
+  --font-weight: var(--framer-font-weight);
+  --text-color: var(--framer-text-color);
+  --letter-spacing: var(--framer-letter-spacing);
+  --font-size: var(--framer-font-size);
+  --text-transform: var(--framer-text-transform);
+  --text-decoration: var(--framer-text-decoration);
+  --line-height: var(--framer-line-height);
+}
+
+[data-framer-component-type="Text"] a,
+[data-framer-component-type="Text"] a div span,
+[data-framer-component-type="Text"] a span span span,
+[data-framer-component-type="Text"] a p span span,
+[data-framer-component-type="Text"] a h1 span span,
+[data-framer-component-type="Text"] a h2 span span,
+[data-framer-component-type="Text"] a h3 span span,
+[data-framer-component-type="Text"] a h4 span span,
+[data-framer-component-type="Text"] a h5 span span,
+[data-framer-component-type="Text"] a h6 span span {
+  --font-family: var(--framer-link-font-family, var(--framer-font-family));
+  --font-style: var(--framer-link-font-style, var(--framer-font-style));
+  --font-weight: var(--framer-link-font-weight, var(--framer-font-weight));
+  --text-color: var(--framer-link-text-color, var(--framer-text-color));
+  --font-size: var(--framer-link-font-size, var(--framer-font-size));
+  --text-transform: var(
+    --framer-link-text-transform,
+    var(--framer-text-transform)
+  );
+  --text-decoration: var(
+    --framer-link-text-decoration,
+    var(--framer-text-decoration)
+  );
+}
+
+[data-framer-component-type="Text"] a:hover,
+[data-framer-component-type="Text"] a div span:hover,
+[data-framer-component-type="Text"] a span span span:hover,
+[data-framer-component-type="Text"] a p span span:hover,
+[data-framer-component-type="Text"] a h1 span span:hover,
+[data-framer-component-type="Text"] a h2 span span:hover,
+[data-framer-component-type="Text"] a h3 span span:hover,
+[data-framer-component-type="Text"] a h4 span span:hover,
+[data-framer-component-type="Text"] a h5 span span:hover,
+[data-framer-component-type="Text"] a h6 span span:hover {
+  --font-family: var(
+    --framer-link-hover-font-family,
+    var(--framer-link-font-family, var(--framer-font-family))
+  );
+  --font-style: var(
+    --framer-link-hover-font-style,
+    var(--framer-link-font-style, var(--framer-font-style))
+  );
+  --font-weight: var(
+    --framer-link-hover-font-weight,
+    var(--framer-link-font-weight, var(--framer-font-weight))
+  );
+  --text-color: var(
+    --framer-link-hover-text-color,
+    var(--framer-link-text-color, var(--framer-text-color))
+  );
+  --font-size: var(
+    --framer-link-hover-font-size,
+    var(--framer-link-font-size, var(--framer-font-size))
+  );
+  --text-transform: var(
+    --framer-link-hover-text-transform,
+    var(--framer-link-text-transform, var(--framer-text-transform))
+  );
+  --text-decoration: var(
+    --framer-link-hover-text-decoration,
+    var(--framer-link-text-decoration, var(--framer-text-decoration))
+  );
+}
+
+[data-framer-component-type="Text"].isCurrent a,
+[data-framer-component-type="Text"].isCurrent a div span,
+[data-framer-component-type="Text"].isCurrent a span span span,
+[data-framer-component-type="Text"].isCurrent a p span span,
+[data-framer-component-type="Text"].isCurrent a h1 span span,
+[data-framer-component-type="Text"].isCurrent a h2 span span,
+[data-framer-component-type="Text"].isCurrent a h3 span span,
+[data-framer-component-type="Text"].isCurrent a h4 span span,
+[data-framer-component-type="Text"].isCurrent a h5 span span,
+[data-framer-component-type="Text"].isCurrent a h6 span span {
+  --font-family: var(
+    --framer-link-current-font-family,
+    var(--framer-link-font-family, var(--framer-font-family))
+  );
+  --font-style: var(
+    --framer-link-current-font-style,
+    var(--framer-link-font-style, var(--framer-font-style))
+  );
+  --font-weight: var(
+    --framer-link-current-font-weight,
+    var(--framer-link-font-weight, var(--framer-font-weight))
+  );
+  --text-color: var(
+    --framer-link-current-text-color,
+    var(--framer-link-text-color, var(--framer-text-color))
+  );
+  --font-size: var(
+    --framer-link-current-font-size,
+    var(--framer-link-font-size, var(--framer-font-size))
+  );
+  --text-transform: var(
+    --framer-link-current-text-transform,
+    var(--framer-link-text-transform, var(--framer-text-transform))
+  );
+  --text-decoration: var(
+    --framer-link-current-text-decoration,
+    var(--framer-link-text-decoration, var(--framer-text-decoration))
+  );
+}
+
+p.framer-text,
+div.framer-text,
+h1.framer-text,
+h2.framer-text,
+h3.framer-text,
+h4.framer-text,
+h5.framer-text,
+h6.framer-text,
+ol.framer-text,
+ul.framer-text {
+  margin: 0;
+  padding: 0;
+}
+
+p.framer-text,
+div.framer-text,
+h1.framer-text,
+h2.framer-text,
+h3.framer-text,
+h4.framer-text,
+h5.framer-text,
+h6.framer-text,
+li.framer-text,
+ol.framer-text,
+ul.framer-text,
+span.framer-text:not([data-text-fill]) {
+  font-family: var(--framer-font-family, Inter, sans-serif);
+  font-style: var(--framer-font-style, normal);
+  font-weight: var(--framer-font-weight, 400);
+  color: var(--framer-text-color, #000);
+  font-size: var(--framer-font-size, 16px);
+  letter-spacing: var(--framer-letter-spacing, 0);
+  text-transform: var(--framer-text-transform, none);
+  text-decoration: var(--framer-text-decoration, none);
+  line-height: var(--framer-line-height, 1.2em);
+  text-align: var(--framer-text-alignment, start);
+}
+
+strong.framer-text {
+  font-weight: bolder;
+}
+
+em.framer-text {
+  font-style: italic;
+}
+
+p.framer-text:not(:first-child),
+div.framer-text:not(:first-child),
+h1.framer-text:not(:first-child),
+h2.framer-text:not(:first-child),
+h3.framer-text:not(:first-child),
+h4.framer-text:not(:first-child),
+h5.framer-text:not(:first-child),
+h6.framer-text:not(:first-child),
+ol.framer-text:not(:first-child),
+ul.framer-text:not(:first-child),
+.framer-image.framer-text:not(:first-child) {
+  margin-top: var(--framer-paragraph-spacing, 0);
+}
+
+.framer-text[data-text-fill] {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: max(0em, calc(calc(1.3em - var(--framer-line-height, 1.3em)) / 2));
+  margin: min(0em, calc(calc(1.3em - var(--framer-line-height, 1.3em)) / -2));
+}
+
+a.framer-text,
+a.framer-text span.framer-text:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-font-family,
+    var(--framer-font-family, Inter, sans-serif)
+  );
+  font-style: var(--framer-link-font-style, var(--framer-font-style, normal));
+  font-weight: var(--framer-link-font-weight, var(--framer-font-weight, 400));
+  color: var(--framer-link-text-color, var(--framer-text-color, #000));
+  font-size: var(--framer-link-font-size, var(--framer-font-size, 16px));
+  text-transform: var(
+    --framer-link-text-transform,
+    var(--framer-text-transform, none)
+  );
+  text-decoration: var(
+    --framer-link-text-decoration,
+    var(--framer-text-decoration, none)
+  );
+  cursor: var(--framer-custom-cursors, pointer);
+}
+
+a.framer-text:hover,
+a.framer-text:hover span.framer-text:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-hover-font-family,
+    var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif))
+  );
+  font-style: var(
+    --framer-link-hover-font-style,
+    var(--framer-link-font-style, var(--framer-font-style, normal))
+  );
+  font-weight: var(
+    --framer-link-hover-font-weight,
+    var(--framer-link-font-weight, var(--framer-font-weight, 400))
+  );
+  color: var(
+    --framer-link-hover-text-color,
+    var(--framer-link-text-color, var(--framer-text-color, #000))
+  );
+  font-size: var(
+    --framer-link-hover-font-size,
+    var(--framer-link-font-size, var(--framer-font-size, 16px))
+  );
+  text-transform: var(
+    --framer-link-hover-text-transform,
+    var(--framer-link-text-transform, var(--framer-text-transform, none))
+  );
+  text-decoration: var(
+    --framer-link-hover-text-decoration,
+    var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+  );
+}
+
+a.framer-text[data-framer-page-link-current],
+a.framer-text[data-framer-page-link-current]
+  span.framer-text:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-current-font-family,
+    var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif))
+  );
+  font-style: var(
+    --framer-link-current-font-style,
+    var(--framer-link-font-style, var(--framer-font-style, normal))
+  );
+  font-weight: var(
+    --framer-link-current-font-weight,
+    var(--framer-link-font-weight, var(--framer-font-weight, 400))
+  );
+  color: var(
+    --framer-link-current-text-color,
+    var(--framer-link-text-color, var(--framer-text-color, #000))
+  );
+  font-size: var(
+    --framer-link-current-font-size,
+    var(--framer-link-font-size, var(--framer-font-size, 16px))
+  );
+  text-transform: var(
+    --framer-link-current-text-transform,
+    var(--framer-link-text-transform, var(--framer-text-transform, none))
+  );
+  text-decoration: var(
+    --framer-link-current-text-decoration,
+    var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+  );
+}
+
+a.framer-text[data-framer-page-link-current]:hover,
+a.framer-text[data-framer-page-link-current]:hover
+  span.framer-text:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-hover-font-family,
+    var(
+      --framer-link-current-font-family,
+      var(
+        --framer-link-font-family,
+        var(--framer-font-family, Inter, sans-serif)
+      )
+    )
+  );
+  font-style: var(
+    --framer-link-hover-font-style,
+    var(
+      --framer-link-current-font-style,
+      var(--framer-link-font-style, var(--framer-font-style, normal))
+    )
+  );
+  font-weight: var(
+    --framer-link-hover-font-weight,
+    var(
+      --framer-link-current-font-weight,
+      var(--framer-link-font-weight, var(--framer-font-weight, 400))
+    )
+  );
+  color: var(
+    --framer-link-hover-text-color,
+    var(
+      --framer-link-current-text-color,
+      var(--framer-link-text-color, var(--framer-text-color, #000))
+    )
+  );
+  font-size: var(
+    --framer-link-hover-font-size,
+    var(
+      --framer-link-current-font-size,
+      var(--framer-link-font-size, var(--framer-font-size, 16px))
+    )
+  );
+  text-transform: var(
+    --framer-link-hover-text-transform,
+    var(
+      --framer-link-current-text-transform,
+      var(--framer-link-text-transform, var(--framer-text-transform, none))
+    )
+  );
+  text-decoration: var(
+    --framer-link-hover-text-decoration,
+    var(
+      --framer-link-current-text-decoration,
+      var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+    )
+  );
+}
+
+.framer-image.framer-text {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-styles-preset-reset.framer-text {
+  --framer-font-family: Inter, sans-serif;
+  --framer-font-style: normal;
+  --framer-font-weight: 500;
+  --framer-text-color: #000;
+  --framer-font-size: 16px;
+  --framer-letter-spacing: 0;
+  --framer-text-transform: none;
+  --framer-text-decoration: none;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: start;
+}
+
+ul.framer-text,
+ol.framer-text {
+  display: table;
+  width: 100%;
+}
+
+li.framer-text {
+  display: table-row;
+  counter-increment: list-item;
+  list-style: none;
+}
+
+ol.framer-text > li.framer-text:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: counter(list-item) ".";
+  white-space: nowrap;
+}
+
+ul.framer-text > li.framer-text:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: "\2022";
+}
+
+.framer-text-module[style*="aspect-ratio"] > :first-child {
+  width: 100%;
+}
+
+@supports not (aspect-ratio: 1) {
+  .framer-text-module[style*="aspect-ratio"] {
+    position: relative;
+  }
+}
+
+@supports not (aspect-ratio: 1) {
+  .framer-text-module[style*="aspect-ratio"]:before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / var(--aspect-ratio));
+  }
+}
+
+@supports not (aspect-ratio: 1) {
+  .framer-text-module[style*="aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+[data-framer-component-type="DeprecatedRichText"] {
+  cursor: inherit;
+}
+
+[data-framer-component-type="DeprecatedRichText"] .text-styles-preset-reset {
+  --framer-font-family: Inter, sans-serif;
+  --framer-font-style: normal;
+  --framer-font-weight: 500;
+  --framer-text-color: #000;
+  --framer-font-size: 16px;
+  --framer-letter-spacing: 0;
+  --framer-text-transform: none;
+  --framer-text-decoration: none;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: start;
+}
+
+[data-framer-component-type="DeprecatedRichText"] p,
+[data-framer-component-type="DeprecatedRichText"] div,
+[data-framer-component-type="DeprecatedRichText"] h1,
+[data-framer-component-type="DeprecatedRichText"] h2,
+[data-framer-component-type="DeprecatedRichText"] h3,
+[data-framer-component-type="DeprecatedRichText"] h4,
+[data-framer-component-type="DeprecatedRichText"] h5,
+[data-framer-component-type="DeprecatedRichText"] h6 {
+  margin: 0;
+  padding: 0;
+}
+
+[data-framer-component-type="DeprecatedRichText"] p,
+[data-framer-component-type="DeprecatedRichText"] div,
+[data-framer-component-type="DeprecatedRichText"] h1,
+[data-framer-component-type="DeprecatedRichText"] h2,
+[data-framer-component-type="DeprecatedRichText"] h3,
+[data-framer-component-type="DeprecatedRichText"] h4,
+[data-framer-component-type="DeprecatedRichText"] h5,
+[data-framer-component-type="DeprecatedRichText"] h6,
+[data-framer-component-type="DeprecatedRichText"] li,
+[data-framer-component-type="DeprecatedRichText"] ol,
+[data-framer-component-type="DeprecatedRichText"] ul,
+[data-framer-component-type="DeprecatedRichText"] span:not([data-text-fill]) {
+  font-family: var(--framer-font-family, Inter, sans-serif);
+  font-style: var(--framer-font-style, normal);
+  font-weight: var(--framer-font-weight, 400);
+  color: var(--framer-text-color, #000);
+  font-size: var(--framer-font-size, 16px);
+  letter-spacing: var(--framer-letter-spacing, 0);
+  text-transform: var(--framer-text-transform, none);
+  text-decoration: var(--framer-text-decoration, none);
+  line-height: var(--framer-line-height, 1.2em);
+  text-align: var(--framer-text-alignment, start);
+}
+
+[data-framer-component-type="DeprecatedRichText"] p:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] div:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] h1:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] h2:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] h3:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] h4:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] h5:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] h6:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] ol:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"] ul:not(:first-child),
+[data-framer-component-type="DeprecatedRichText"]
+  .framer-image:not(:first-child) {
+  margin-top: var(--framer-paragraph-spacing, 0);
+}
+
+[data-framer-component-type="DeprecatedRichText"] span[data-text-fill] {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-framer-component-type="DeprecatedRichText"] a,
+[data-framer-component-type="DeprecatedRichText"] a span:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-font-family,
+    var(--framer-font-family, Inter, sans-serif)
+  );
+  font-style: var(--framer-link-font-style, var(--framer-font-style, normal));
+  font-weight: var(--framer-link-font-weight, var(--framer-font-weight, 400));
+  color: var(--framer-link-text-color, var(--framer-text-color, #000));
+  font-size: var(--framer-link-font-size, var(--framer-font-size, 16px));
+  text-transform: var(
+    --framer-link-text-transform,
+    var(--framer-text-transform, none)
+  );
+  text-decoration: var(
+    --framer-link-text-decoration,
+    var(--framer-text-decoration, none)
+  );
+}
+
+[data-framer-component-type="DeprecatedRichText"] a:hover,
+[data-framer-component-type="DeprecatedRichText"]
+  a:hover
+  span:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-hover-font-family,
+    var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif))
+  );
+  font-style: var(
+    --framer-link-hover-font-style,
+    var(--framer-link-font-style, var(--framer-font-style, normal))
+  );
+  font-weight: var(
+    --framer-link-hover-font-weight,
+    var(--framer-link-font-weight, var(--framer-font-weight, 400))
+  );
+  color: var(
+    --framer-link-hover-text-color,
+    var(--framer-link-text-color, var(--framer-text-color, #000))
+  );
+  font-size: var(
+    --framer-link-hover-font-size,
+    var(--framer-link-font-size, var(--framer-font-size, 16px))
+  );
+  text-transform: var(
+    --framer-link-hover-text-transform,
+    var(--framer-link-text-transform, var(--framer-text-transform, none))
+  );
+  text-decoration: var(
+    --framer-link-hover-text-decoration,
+    var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+  );
+}
+
+a[data-framer-page-link-current],
+a[data-framer-page-link-current] span:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-current-font-family,
+    var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif))
+  );
+  font-style: var(
+    --framer-link-current-font-style,
+    var(--framer-link-font-style, var(--framer-font-style, normal))
+  );
+  font-weight: var(
+    --framer-link-current-font-weight,
+    var(--framer-link-font-weight, var(--framer-font-weight, 400))
+  );
+  color: var(
+    --framer-link-current-text-color,
+    var(--framer-link-text-color, var(--framer-text-color, #000))
+  );
+  font-size: var(
+    --framer-link-current-font-size,
+    var(--framer-link-font-size, var(--framer-font-size, 16px))
+  );
+  text-transform: var(
+    --framer-link-current-text-transform,
+    var(--framer-link-text-transform, var(--framer-text-transform, none))
+  );
+  text-decoration: var(
+    --framer-link-current-text-decoration,
+    var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+  );
+}
+
+a[data-framer-page-link-current]:hover,
+a[data-framer-page-link-current]:hover span:not([data-text-fill]) {
+  font-family: var(
+    --framer-link-hover-font-family,
+    var(
+      --framer-link-current-font-family,
+      var(
+        --framer-link-font-family,
+        var(--framer-font-family, Inter, sans-serif)
+      )
+    )
+  );
+  font-style: var(
+    --framer-link-hover-font-style,
+    var(
+      --framer-link-current-font-style,
+      var(--framer-link-font-style, var(--framer-font-style, normal))
+    )
+  );
+  font-weight: var(
+    --framer-link-hover-font-weight,
+    var(
+      --framer-link-current-font-weight,
+      var(--framer-link-font-weight, var(--framer-font-weight, 400))
+    )
+  );
+  color: var(
+    --framer-link-hover-text-color,
+    var(
+      --framer-link-current-text-color,
+      var(--framer-link-text-color, var(--framer-text-color, #000))
+    )
+  );
+  font-size: var(
+    --framer-link-hover-font-size,
+    var(
+      --framer-link-current-font-size,
+      var(--framer-link-font-size, var(--framer-font-size, 16px))
+    )
+  );
+  text-transform: var(
+    --framer-link-hover-text-transform,
+    var(
+      --framer-link-current-text-transform,
+      var(--framer-link-text-transform, var(--framer-text-transform, none))
+    )
+  );
+  text-decoration: var(
+    --framer-link-hover-text-decoration,
+    var(
+      --framer-link-current-text-decoration,
+      var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+    )
+  );
+}
+
+[data-framer-component-type="DeprecatedRichText"] strong {
+  font-weight: bolder;
+}
+
+[data-framer-component-type="DeprecatedRichText"] em {
+  font-style: italic;
+}
+
+[data-framer-component-type="DeprecatedRichText"] .framer-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+[data-framer-component-type="DeprecatedRichText"] ul,
+[data-framer-component-type="DeprecatedRichText"] ol {
+  display: table;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+}
+
+[data-framer-component-type="DeprecatedRichText"] li {
+  display: table-row;
+  counter-increment: list-item;
+  list-style: none;
+}
+
+[data-framer-component-type="DeprecatedRichText"] ol > li:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: counter(list-item) ".";
+  white-space: nowrap;
+}
+
+[data-framer-component-type="DeprecatedRichText"] ul > li:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: "\2022";
+}
+
+:not([data-framer-generated]) > [data-framer-stack-content-wrapper] > *,
+:not([data-framer-generated])
+  > [data-framer-stack-content-wrapper]
+  > [data-framer-component-type],
+:not([data-framer-generated])
+  > [data-framer-stack-content-wrapper]
+  > [data-framer-legacy-stack-gap-enabled]
+  > *,
+:not([data-framer-generated])
+  > [data-framer-stack-content-wrapper]
+  > [data-framer-legacy-stack-gap-enabled]
+  > [data-framer-component-type] {
+  position: relative;
+}
+
+.flexbox-gap-not-supported [data-framer-legacy-stack-gap-enabled="true"] > *,
+[data-framer-legacy-stack-gap-enabled="true"][data-framer-stack-flexbox-gap="false"] {
+  margin-top: calc(var(--stack-gap-y) / 2);
+  margin-bottom: calc(var(--stack-gap-y) / 2);
+  margin-right: calc(var(--stack-gap-x) / 2);
+  margin-left: calc(var(--stack-gap-x) / 2);
+}
+
+[data-framer-stack-content-wrapper][data-framer-stack-gap-enabled="true"] {
+  row-gap: var(--stack-native-row-gap);
+  column-gap: var(--stack-native-column-gap);
+}
+
+.flexbox-gap-not-supported
+  [data-framer-stack-content-wrapper][data-framer-stack-gap-enabled="true"] {
+  row-gap: unset;
+  column-gap: unset;
+}
+
+.flexbox-gap-not-supported
+  [data-framer-stack-direction-reverse="false"]
+  [data-framer-legacy-stack-gap-enabled="true"]
+  > *:first-child,
+[data-framer-stack-direction-reverse="false"]
+  [data-framer-legacy-stack-gap-enabled="true"][data-framer-stack-flexbox-gap="false"]
+  > *:first-child,
+.flexbox-gap-not-supported
+  [data-framer-stack-direction-reverse="true"]
+  [data-framer-legacy-stack-gap-enabled="true"]
+  > *:last-child,
+[data-framer-stack-direction-reverse="true"]
+  [data-framer-legacy-stack-gap-enabled="true"][data-framer-stack-flexbox-gap="false"]
+  > *:last-child {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.flexbox-gap-not-supported
+  [data-framer-stack-direction-reverse="false"]
+  [data-framer-legacy-stack-gap-enabled="true"]
+  > *:last-child,
+[data-framer-stack-direction-reverse="false"]
+  [data-framer-legacy-stack-gap-enabled="true"][data-framer-stack-flexbox-gap="false"]
+  > *:last-child,
+.flexbox-gap-not-supported
+  [data-framer-stack-direction-reverse="true"]
+  [data-framer-legacy-stack-gap-enabled="true"]
+  > *:first-child,
+[data-framer-stack-direction-reverse="true"]
+  [data-framer-legacy-stack-gap-enabled="true"][data-framer-stack-flexbox-gap="false"]
+  > *:first-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+NavigationContainer [data-framer-component-type="NavigationContainer"] > *,
+[data-framer-component-type="NavigationContainer"]
+  > [data-framer-component-type] {
+  position: relative;
+}
+
+[data-framer-component-type="Scroll"]::-webkit-scrollbar {
+  display: none;
+}
+
+[data-framer-component-type="ScrollContentWrapper"] > * {
+  position: relative;
+}
+
+[data-framer-component-type="NativeScroll"] {
+  -webkit-overflow-scrolling: touch;
+}
+
+[data-framer-component-type="NativeScroll"] > * {
+  position: relative;
+}
+
+[data-framer-component-type="NativeScroll"].direction-both {
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+[data-framer-component-type="NativeScroll"].direction-vertical {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+[data-framer-component-type="NativeScroll"].direction-horizontal {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+[data-framer-component-type="NativeScroll"].direction-vertical > * {
+  width: 100% !important;
+}
+
+[data-framer-component-type="NativeScroll"].direction-horizontal > * {
+  height: 100% !important;
+}
+
+[data-framer-component-type="NativeScroll"].scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+[data-framer-component-type="PageContentWrapper"] > *,
+[data-framer-component-type="PageContentWrapper"]
+  > [data-framer-component-type] {
+  position: relative;
+}
+
+[data-framer-component-type="DeviceComponent"].no-device > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+[data-is-present="false"],
+[data-is-present="false"] * {
+  pointer-events: none !important;
+}
+
+[data-framer-cursor="pointer"] {
+  cursor: pointer;
+}
+
+[data-framer-cursor="grab"] {
+  cursor: grab;
+}
+
+[data-framer-cursor="grab"]:active {
+  cursor: grabbing;
+}
+
+[data-framer-component-type="Frame"] *,
+[data-framer-component-type="Stack"] * {
+  pointer-events: auto;
+}
+
+[data-framer-generated] * {
+  pointer-events: unset;
+}
+
+.svgContainer svg {
+  display: block;
+}
+
+[data-reset="button"] {
+  border-width: 0;
+  padding: 0;
+}
+
+.framer-9yp6u [data-border="true"]:after {
+  content: "";
+  border-width: var(--border-top-width, 0) var(--border-right-width, 0)
+    var(--border-bottom-width, 0) var(--border-left-width, 0);
+  border-color: var(--border-color, none);
+  border-style: var(--border-style, none);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@supports (aspect-ratio: 1) {
+  body {
+    --framer-aspect-ratio-supported: auto;
+  }
+}
+
+.framer-9yp6u .framer-19z5vsn {
+  display: block;
+}
+
+.framer-9yp6u .framer-1ay8419 {
+  align-content: center;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1444px;
+}
+
+.framer-9yp6u .framer-n2c8py {
+  background-color: #fff;
+  flex: none;
+  height: 3876px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.framer-9yp6u .framer-1u7odzh {
+  flex: none;
+  height: 236px;
+  left: 1317px;
+  overflow: visible;
+  position: absolute;
+  top: 1903px;
+  transform: rotate(-30deg);
+  width: 140px;
+}
+
+.framer-9yp6u .framer-y38wbn {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 18px;
+  overflow: hidden;
+  position: absolute;
+  top: 174px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-ffva9a {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 79px;
+  overflow: hidden;
+  position: absolute;
+  top: 65px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-hen7j8 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 23px;
+  left: 39px;
+  overflow: hidden;
+  position: absolute;
+  top: 152px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-iihh04 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 13px;
+  left: 29px;
+  overflow: hidden;
+  position: absolute;
+  top: 222px;
+  transform: rotate(31deg);
+  width: 8px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1onyz0a {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 23px;
+  left: 53px;
+  overflow: hidden;
+  position: absolute;
+  top: 87px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-17oodal {
+  background-color: #f1582e1a;
+  border-radius: 200px;
+  flex: none;
+  height: 23px;
+  left: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 44px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-18ccbr {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 55px;
+  overflow: hidden;
+  position: absolute;
+  top: 108px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-10yx6h {
+  background-color: #f1582e1a;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 117px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-ifqbk8 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 156px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-13tm9ko {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 72px;
+  overflow: hidden;
+  position: absolute;
+  top: 48px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1rk6ti8 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 36px;
+  overflow: hidden;
+  position: absolute;
+  top: 108px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-o78bx5 {
+  background-color: #f1582e1a;
+  border-radius: 200px;
+  flex: none;
+  height: 43px;
+  left: 98px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-vtzpo1 {
+  background-color: #fefcf3;
+  flex: none;
+  height: 459px;
+  left: -16px;
+  overflow: hidden;
+  position: absolute;
+  top: 1798px;
+  width: 1214px;
+}
+
+.framer-9yp6u .framer-1doohbl {
+  background-color: #fefcf3;
+  flex: none;
+  height: 683px;
+  left: 241px;
+  overflow: hidden;
+  position: absolute;
+  top: 911px;
+  width: 252px;
+}
+
+.framer-9yp6u .framer-gqvu7i {
+  flex: none;
+  height: 983px;
+  left: 544px;
+  opacity: 0.6;
+  overflow: visible;
+  position: absolute;
+  top: -192px;
+  width: 969px;
+}
+
+.framer-9yp6u .framer-1im985q {
+  border-radius: 0 0 0 1000px/0px 0px 0px 1000px;
+  flex: none;
+  height: 983px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 969px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1kfuf4y {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 16px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 66px;
+  overflow: visible;
+  position: absolute;
+  top: 5778px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-1l1r0k7 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 910px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 100px;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 46px;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-1r1xylj {
+  aspect-ratio: 3.8292682926829267 / 1;
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 41px);
+  overflow: hidden;
+  position: relative;
+  width: 157px;
+}
+
+.framer-9yp6u .framer-olsrtt {
+  align-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 60px;
+  justify-content: center;
+  overflow: visible;
+  padding: 16px 24px;
+  position: relative;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-3vj6tw {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 16px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #f1582e;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-1i1ddws,
+.framer-9yp6u .framer-1nxaubh,
+.framer-9yp6u .framer-13jke3 {
+  flex: none;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.framer-9yp6u .framer-1407ukp {
+  flex: none;
+  height: 66px;
+  left: 121px;
+  overflow: visible;
+  position: absolute;
+  top: 202px;
+  width: 128px;
+}
+
+.framer-9yp6u .framer-1295tko {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 8px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.5077540874481201px;
+  position: absolute;
+  top: 0;
+  width: 128px;
+}
+
+.framer-9yp6u .framer-1w5ngd9,
+.framer-9yp6u .framer-1ictiiq,
+.framer-9yp6u .framer-18svjm4,
+.framer-9yp6u .framer-ud248m,
+.framer-9yp6u .framer-1h21ktv,
+.framer-9yp6u .framer-5jvak6,
+.framer-9yp6u .framer-3nqlhk,
+.framer-9yp6u .framer-1a7m0n9,
+.framer-9yp6u .framer-tal32o,
+.framer-9yp6u .framer-wsumwe,
+.framer-9yp6u .framer-6kj7a8,
+.framer-9yp6u .framer-cnhhju,
+.framer-9yp6u .framer-buwwiz,
+.framer-9yp6u .framer-1e01qal,
+.framer-9yp6u .framer-1md2x8k,
+.framer-9yp6u .framer-1ighnpy,
+.framer-9yp6u .framer-267vur,
+.framer-9yp6u .framer-1on25c7,
+.framer-9yp6u .framer-gf494,
+.framer-9yp6u .framer-152yghy,
+.framer-9yp6u .framer-1m1z8de,
+.framer-9yp6u .framer-11rdhfz,
+.framer-9yp6u .framer-1p0udyw,
+.framer-9yp6u .framer-ajmpjm,
+.framer-9yp6u .framer-bwq2fo,
+.framer-9yp6u .framer-mtl5bq,
+.framer-9yp6u .framer-1ds8had,
+.framer-9yp6u .framer-e3q985,
+.framer-9yp6u .framer-1t68ws5,
+.framer-9yp6u .framer-1rgw654,
+.framer-9yp6u .framer-1o6cn56,
+.framer-9yp6u .framer-zq7v5o,
+.framer-9yp6u .framer-1uk3s78,
+.framer-9yp6u .framer-s9ihg4,
+.framer-9yp6u .framer-1qrcngi,
+.framer-9yp6u .framer-1iz7frs,
+.framer-9yp6u .framer-1360zqu,
+.framer-9yp6u .framer-17j0oow,
+.framer-9yp6u .framer-sh5a5s,
+.framer-9yp6u .framer-cws9ly,
+.framer-9yp6u .framer-1r7a7bx,
+.framer-9yp6u .framer-11ue6p0,
+.framer-9yp6u .framer-i743ac,
+.framer-9yp6u .framer-8bqz5l {
+  aspect-ratio: 1 / 1;
+  background-color: #f1582e4d;
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 4px);
+  overflow: hidden;
+  position: relative;
+  width: 5px;
+}
+
+.framer-9yp6u .framer-ssnpl9 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 8px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.5077540874481201px;
+  position: absolute;
+  top: 20px;
+  width: 128px;
+}
+
+.framer-9yp6u .framer-byjv1x {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 8px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.5077540874481201px;
+  position: absolute;
+  top: 39px;
+  width: 128px;
+}
+
+.framer-9yp6u .framer-cljd91 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 8px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.5077540874481201px;
+  position: absolute;
+  top: 59px;
+  width: 128px;
+}
+
+.framer-9yp6u .framer-1ejpji7 {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 72px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #352b2a;
+  --framer-text-decoration: none;
+  --framer-text-transform: capitalize;
+  flex: none;
+  height: auto;
+  left: 121px;
+  overflow: hidden;
+  position: absolute;
+  top: 304px;
+  white-space: pre-wrap;
+  width: 549px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-6uxkoh {
+  flex: none;
+  height: 406px;
+  left: 827px;
+  overflow: visible;
+  position: absolute;
+  top: -29px;
+  transform: rotate(-30deg);
+  width: 241px;
+}
+
+.framer-9yp6u .framer-1q92ik0 {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 299px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1w3lc9g {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 136px;
+  overflow: hidden;
+  position: absolute;
+  top: 113px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-18f9720 {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 40px;
+  left: 67px;
+  overflow: hidden;
+  position: absolute;
+  top: 262px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-d1jkm1 {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 22px;
+  left: 49px;
+  overflow: hidden;
+  position: absolute;
+  top: 382px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-w8bt1j {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 40px;
+  left: 92px;
+  overflow: hidden;
+  position: absolute;
+  top: 150px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-18bu3xf {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 40px;
+  left: 173px;
+  overflow: hidden;
+  position: absolute;
+  top: 75px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-50w1s0 {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 95px;
+  overflow: hidden;
+  position: absolute;
+  top: 187px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1wr6h62 {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 201px;
+  overflow: hidden;
+  position: absolute;
+  top: 1px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1kl12fs {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 17px;
+  overflow: hidden;
+  position: absolute;
+  top: 268px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1hlaef0 {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 123px;
+  overflow: hidden;
+  position: absolute;
+  top: 82px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1b77ksu {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 62px;
+  overflow: hidden;
+  position: absolute;
+  top: 187px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1n6zll4 {
+  background-color: #ffffff4d;
+  border-radius: 200px;
+  flex: none;
+  height: 74px;
+  left: 169px;
+  overflow: hidden;
+  position: absolute;
+  top: 1px;
+  transform: rotate(31deg);
+  width: 22px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-11hiy42 {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 22px;
+  --framer-font-style: normal;
+  --framer-font-weight: 400;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 32px;
+  --framer-text-alignment: left;
+  --framer-text-color: #000000;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: 123px;
+  left: 125px;
+  overflow: hidden;
+  position: absolute;
+  top: 512px;
+  white-space: pre-wrap;
+  width: 500px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-fn1x4d {
+  flex: none;
+  height: 252px;
+  left: 161px;
+  overflow: visible;
+  position: absolute;
+  top: 570px;
+  transform: rotate(60deg);
+  width: 149px;
+}
+
+.framer-9yp6u .framer-3cbp51 {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 19px;
+  overflow: hidden;
+  position: absolute;
+  top: 186px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1u13ocd {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: 70px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1uznu1k {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 25px;
+  left: 41px;
+  overflow: hidden;
+  position: absolute;
+  top: 162px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1wey9rr {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 14px;
+  left: 31px;
+  overflow: hidden;
+  position: absolute;
+  top: 237px;
+  transform: rotate(31deg);
+  width: 9px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1ptslyl {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 25px;
+  left: 57px;
+  overflow: hidden;
+  position: absolute;
+  top: 93px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1g41dm {
+  background-color: #6658444d;
+  border-radius: 200px;
+  flex: none;
+  height: 25px;
+  left: 107px;
+  overflow: hidden;
+  position: absolute;
+  top: 47px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1mk3igy {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 59px;
+  overflow: hidden;
+  position: absolute;
+  top: 116px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1nihdf4 {
+  background-color: #6658444d;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 125px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-c0cca {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 167px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-15sdqt1 {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 77px;
+  overflow: hidden;
+  position: absolute;
+  top: 51px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1efa55f {
+  background-color: #66584433;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 39px;
+  overflow: hidden;
+  position: absolute;
+  top: 116px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-h0cgtj {
+  background-color: #6658444d;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 105px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-48arlm {
+  flex: none;
+  height: 560px;
+  left: 1117px;
+  overflow: visible;
+  position: absolute;
+  top: 181px;
+  transform: rotate(-30deg);
+  width: 332px;
+}
+
+.framer-9yp6u .framer-1vzqp8k {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 42px;
+  overflow: hidden;
+  position: absolute;
+  top: 412px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-im93hw {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 188px;
+  overflow: hidden;
+  position: absolute;
+  top: 155px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-oif5yf {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 56px;
+  left: 92px;
+  overflow: hidden;
+  position: absolute;
+  top: 361px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1ska17i {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 31px;
+  left: 68px;
+  overflow: hidden;
+  position: absolute;
+  top: 527px;
+  transform: rotate(31deg);
+  width: 20px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1u0tpun {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 56px;
+  left: 126px;
+  overflow: hidden;
+  position: absolute;
+  top: 206px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1hb9k5h {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 56px;
+  left: 238px;
+  overflow: hidden;
+  position: absolute;
+  top: 104px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-zg2et {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 131px;
+  overflow: hidden;
+  position: absolute;
+  top: 258px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-xqscx5 {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 277px;
+  overflow: hidden;
+  position: absolute;
+  top: 1px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-j95ln8 {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 370px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1sej8db {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 170px;
+  overflow: hidden;
+  position: absolute;
+  top: 113px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-5bphi0 {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 86px;
+  overflow: hidden;
+  position: absolute;
+  top: 258px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-13w8pjb {
+  background-color: #ffffff26;
+  border-radius: 200px;
+  flex: none;
+  height: 101px;
+  left: 232px;
+  overflow: hidden;
+  position: absolute;
+  top: 1px;
+  transform: rotate(31deg);
+  width: 31px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-ppx7vx {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 56px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #f1582e;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 673px;
+  overflow: visible;
+  position: absolute;
+  top: 946px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-c7j6rt {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 22px;
+  --framer-font-style: normal;
+  --framer-font-weight: 400;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 40px;
+  --framer-text-alignment: left;
+  --framer-text-color: #352b2a;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: 162px;
+  left: 672px;
+  overflow: hidden;
+  position: absolute;
+  top: 1057px;
+  white-space: pre-wrap;
+  width: 693px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-1ovt6pi {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 22px;
+  --framer-font-style: normal;
+  --framer-font-weight: 400;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 40px;
+  --framer-text-alignment: left;
+  --framer-text-color: #352b2a;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: 159px;
+  left: 673px;
+  overflow: hidden;
+  position: absolute;
+  top: 1234px;
+  white-space: pre-wrap;
+  width: 693px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-156q064 {
+  flex: none;
+  height: 39px;
+  left: 1239px;
+  overflow: visible;
+  position: absolute;
+  top: 858px;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-1p424m0,
+.framer-9yp6u .framer-zhn1ow,
+.framer-9yp6u .framer-1lahoc1,
+.framer-9yp6u .framer-fdi15i {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  height: 4px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 0.8941176533699036px;
+  position: absolute;
+  top: 0;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-qsd98,
+.framer-9yp6u .framer-1scjhkm,
+.framer-9yp6u .framer-pr1gms,
+.framer-9yp6u .framer-1kji8oa,
+.framer-9yp6u .framer-1w10w9n,
+.framer-9yp6u .framer-hdzwwq,
+.framer-9yp6u .framer-13wpkwh,
+.framer-9yp6u .framer-1ki78dv,
+.framer-9yp6u .framer-dqevfz,
+.framer-9yp6u .framer-1ni3t6b,
+.framer-9yp6u .framer-1euc3ae,
+.framer-9yp6u .framer-1uwa1w,
+.framer-9yp6u .framer-aai9ph,
+.framer-9yp6u .framer-1fyd7di,
+.framer-9yp6u .framer-1lpz9xw,
+.framer-9yp6u .framer-1u2vpir,
+.framer-9yp6u .framer-jmcunu,
+.framer-9yp6u .framer-1r087hn,
+.framer-9yp6u .framer-129k9ki,
+.framer-9yp6u .framer-e6lorx,
+.framer-9yp6u .framer-klwzgh,
+.framer-9yp6u .framer-1w9wu6b,
+.framer-9yp6u .framer-120f9w5,
+.framer-9yp6u .framer-1j144uz,
+.framer-9yp6u .framer-j04f7,
+.framer-9yp6u .framer-yh2gw0,
+.framer-9yp6u .framer-1mr9h99,
+.framer-9yp6u .framer-1gdic4h,
+.framer-9yp6u .framer-fyjq4x,
+.framer-9yp6u .framer-87sb65,
+.framer-9yp6u .framer-161xug6,
+.framer-9yp6u .framer-1vdqu0i,
+.framer-9yp6u .framer-166z6xa,
+.framer-9yp6u .framer-1cfpkz7,
+.framer-9yp6u .framer-svlhlz,
+.framer-9yp6u .framer-8wb6i8,
+.framer-9yp6u .framer-1dgscwr,
+.framer-9yp6u .framer-11id9u0,
+.framer-9yp6u .framer-19405li,
+.framer-9yp6u .framer-lox9se,
+.framer-9yp6u .framer-1qwjsfs,
+.framer-9yp6u .framer-r9j8ua,
+.framer-9yp6u .framer-17yp7t6,
+.framer-9yp6u .framer-uylnfp,
+.framer-9yp6u .framer-1fajknl,
+.framer-9yp6u .framer-zzfxbn,
+.framer-9yp6u .framer-1u4t80y,
+.framer-9yp6u .framer-ia3fez,
+.framer-9yp6u .framer-1i6kp7e,
+.framer-9yp6u .framer-10bssl0,
+.framer-9yp6u .framer-1pwav76,
+.framer-9yp6u .framer-n0i1ig,
+.framer-9yp6u .framer-1dztr5b,
+.framer-9yp6u .framer-1ef416c,
+.framer-9yp6u .framer-1jryejo,
+.framer-9yp6u .framer-wwplv4,
+.framer-9yp6u .framer-lt1uoc,
+.framer-9yp6u .framer-at6vl7,
+.framer-9yp6u .framer-1rden0o,
+.framer-9yp6u .framer-wpxjyh,
+.framer-9yp6u .framer-51owf6,
+.framer-9yp6u .framer-167qllu,
+.framer-9yp6u .framer-16ehgvs,
+.framer-9yp6u .framer-18j6svi,
+.framer-9yp6u .framer-jc7nuq,
+.framer-9yp6u .framer-19ebjcp,
+.framer-9yp6u .framer-q90ghf,
+.framer-9yp6u .framer-6c0y3s,
+.framer-9yp6u .framer-1ey37gb,
+.framer-9yp6u .framer-phavlx,
+.framer-9yp6u .framer-r0ppgf,
+.framer-9yp6u .framer-17tbxgp,
+.framer-9yp6u .framer-18ksjro,
+.framer-9yp6u .framer-11xv6i4,
+.framer-9yp6u .framer-1unnqhx,
+.framer-9yp6u .framer-1geysos,
+.framer-9yp6u .framer-kcwmg9,
+.framer-9yp6u .framer-22id26,
+.framer-9yp6u .framer-ir63cn,
+.framer-9yp6u .framer-ka036j,
+.framer-9yp6u .framer-1jze958,
+.framer-9yp6u .framer-14kt9lq,
+.framer-9yp6u .framer-1x138il,
+.framer-9yp6u .framer-152rtmf,
+.framer-9yp6u .framer-13yk03f,
+.framer-9yp6u .framer-1wjve4p,
+.framer-9yp6u .framer-15axlip,
+.framer-9yp6u .framer-jvwbef,
+.framer-9yp6u .framer-rkuum,
+.framer-9yp6u .framer-1cnegbj,
+.framer-9yp6u .framer-12utycg,
+.framer-9yp6u .framer-7vfwm8,
+.framer-9yp6u .framer-1xr7otc,
+.framer-9yp6u .framer-145o8qq,
+.framer-9yp6u .framer-au5fqk,
+.framer-9yp6u .framer-eqnbf,
+.framer-9yp6u .framer-dndla2,
+.framer-9yp6u .framer-b8quhj,
+.framer-9yp6u .framer-85xrej,
+.framer-9yp6u .framer-wu3hfg,
+.framer-9yp6u .framer-ta094v,
+.framer-9yp6u .framer-kalqzk,
+.framer-9yp6u .framer-o78rba,
+.framer-9yp6u .framer-1dcgqrl,
+.framer-9yp6u .framer-kasobu,
+.framer-9yp6u .framer-vba0gk,
+.framer-9yp6u .framer-1ee92k4,
+.framer-9yp6u .framer-1txihou,
+.framer-9yp6u .framer-7dbe5n,
+.framer-9yp6u .framer-1tke1nd,
+.framer-9yp6u .framer-1w960ci,
+.framer-9yp6u .framer-1tlwdpk,
+.framer-9yp6u .framer-1t54opt,
+.framer-9yp6u .framer-1y71wne,
+.framer-9yp6u .framer-1hz5pez,
+.framer-9yp6u .framer-1m8gahv,
+.framer-9yp6u .framer-163vgzz,
+.framer-9yp6u .framer-173157y,
+.framer-9yp6u .framer-11b9g7x,
+.framer-9yp6u .framer-eb8y12,
+.framer-9yp6u .framer-1bql4bt,
+.framer-9yp6u .framer-90o52q,
+.framer-9yp6u .framer-1qeiof4,
+.framer-9yp6u .framer-bgj0rn,
+.framer-9yp6u .framer-dqtz4y,
+.framer-9yp6u .framer-1w9tuvq,
+.framer-9yp6u .framer-1xq3cvt,
+.framer-9yp6u .framer-1y7vxah,
+.framer-9yp6u .framer-1er02ei,
+.framer-9yp6u .framer-ibp2jp,
+.framer-9yp6u .framer-1mda943,
+.framer-9yp6u .framer-1nz0ol6 {
+  aspect-ratio: 1 / 1;
+  background-color: #66584499;
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 3px);
+  overflow: hidden;
+  position: relative;
+  width: 3px;
+}
+
+.framer-9yp6u .framer-1h4qf7z,
+.framer-9yp6u .framer-49y0s7,
+.framer-9yp6u .framer-w8adn6,
+.framer-9yp6u .framer-df75vg {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  height: 4px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 0.8941176533699036px;
+  position: absolute;
+  top: 12px;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-2cxdve,
+.framer-9yp6u .framer-x2e13c,
+.framer-9yp6u .framer-1uxcae7,
+.framer-9yp6u .framer-orx3zc {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  height: 4px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 0.8941176533699036px;
+  position: absolute;
+  top: 23px;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-rrj16o,
+.framer-9yp6u .framer-nsgrxq,
+.framer-9yp6u .framer-lzi7qc,
+.framer-9yp6u .framer-1iavpkk {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  height: 4px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 0.8941176533699036px;
+  position: absolute;
+  top: 35px;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-wde52w {
+  flex: none;
+  height: 39px;
+  left: 1296px;
+  overflow: visible;
+  position: absolute;
+  top: 2224px;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-cxd6tk {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 20px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 40px;
+  --framer-text-alignment: left;
+  --framer-text-color: rgba(102, 88, 68, 0.6);
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: 118px;
+  left: 671px;
+  overflow: hidden;
+  position: absolute;
+  top: 1428px;
+  white-space: pre-wrap;
+  width: 678px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-70x3s9 {
+  flex: none;
+  height: 577px;
+  left: -548px;
+  overflow: visible;
+  position: absolute;
+  top: 964px;
+  width: 982px;
+}
+
+.framer-9yp6u .framer-penc4r {
+  flex: none;
+  height: 577px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 982px;
+}
+
+.framer-9yp6u .framer-r6ftmc {
+  background: linear-gradient(
+    179.99999984795812deg,
+    rgba(54, 165, 221, 0.96) 0%,
+    rgba(55, 166, 221, 0) 84.37640070915222%
+  );
+  flex: none;
+  height: 577px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 982px;
+}
+
+.framer-9yp6u .framer-wzfkzn {
+  flex: none;
+  height: 51px;
+  left: 583px;
+  position: absolute;
+  top: 1462px;
+  width: 51px;
+}
+
+.framer-9yp6u .framer-t60cte {
+  align-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 60px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 140px;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 1847px;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-ckpa6v {
+  flex: none;
+  height: 347px;
+  overflow: visible;
+  position: relative;
+  width: 550px;
+}
+
+.framer-9yp6u .framer-t9u6bc,
+.framer-9yp6u .framer-d58r24 {
+  flex: none;
+  height: 320px;
+  left: 0;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  width: 550px;
+}
+
+.framer-9yp6u .framer-1e2b1xs,
+.framer-9yp6u .framer-n0wp6u {
+  flex: none;
+  height: 320px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 550px;
+}
+
+.framer-9yp6u .framer-infwih {
+  background: linear-gradient(
+    179.99999984795812deg,
+    rgba(54, 165, 221, 0.96) 17.18616485595703%,
+    rgba(55, 166, 221, 0) 100%
+  );
+  flex: none;
+  height: 320px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 550px;
+}
+
+.framer-9yp6u .framer-1yipraf {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 24px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: 85px;
+  left: 54px;
+  overflow: hidden;
+  position: absolute;
+  top: 128px;
+  white-space: pre-wrap;
+  width: 461px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-1ax3uqo {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 100px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 24px;
+  overflow: visible;
+  position: absolute;
+  top: 66px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-161mye6 {
+  flex: none;
+  height: 55px;
+  left: 23px;
+  overflow: visible;
+  position: absolute;
+  top: 292px;
+  width: 237px;
+}
+
+.framer-9yp6u .framer-1f852kn,
+.framer-9yp6u .framer-6s5k6j {
+  background-color: #f1582e;
+  flex: none;
+  height: 55px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 237px;
+}
+
+.framer-9yp6u .framer-8qeagw {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 22px;
+  --framer-font-style: normal;
+  --framer-font-weight: 800;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 40px;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 57px;
+  overflow: visible;
+  position: absolute;
+  top: 8px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-56jrbo {
+  flex: none;
+  height: 343px;
+  overflow: visible;
+  position: relative;
+  width: 550px;
+}
+
+.framer-9yp6u .framer-164qx64 {
+  background: linear-gradient(
+    179.99999984795812deg,
+    rgba(54, 165, 221, 0.96) 13.540183007717133%,
+    rgba(55, 166, 221, 0) 100%
+  );
+  flex: none;
+  height: 320px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 550px;
+}
+
+.framer-9yp6u .framer-m3t7y2 {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 100px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 24px;
+  overflow: visible;
+  position: absolute;
+  top: 62px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-k1q25b {
+  flex: none;
+  height: 55px;
+  left: 31px;
+  overflow: visible;
+  position: absolute;
+  top: 288px;
+  width: 237px;
+}
+
+.framer-9yp6u .framer-1nxhgrm {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 22px;
+  --framer-font-style: normal;
+  --framer-font-weight: 800;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 40px;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 65px;
+  overflow: visible;
+  position: absolute;
+  top: 8px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-wlcfbo {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 24px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: 77px;
+  left: 54px;
+  overflow: hidden;
+  position: absolute;
+  top: 125px;
+  white-space: pre-wrap;
+  width: 476px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-dwvnoy {
+  flex: none;
+  height: 39px;
+  left: 682px;
+  overflow: visible;
+  position: absolute;
+  top: 2375px;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-1mf1mq1 {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 56px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #f1582e;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 548px;
+  overflow: visible;
+  position: absolute;
+  top: 2440px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-1e2hw6p {
+  flex: none;
+  height: 419px;
+  left: -16px;
+  overflow: visible;
+  position: absolute;
+  top: 2589px;
+  width: 1466px;
+}
+
+.framer-9yp6u .framer-1mz41df {
+  flex: none;
+  height: 419px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1466px;
+}
+
+.framer-9yp6u .framer-2of9di {
+  background: linear-gradient(
+    179.99999984795812deg,
+    rgba(55, 166, 221, 0) 26.5625%,
+    rgba(54, 165, 221, 0.9599999785423279) 100%
+  );
+  flex: none;
+  height: 419px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1466px;
+}
+
+.framer-9yp6u .framer-1qt4aqm {
+  flex: none;
+  height: 39px;
+  left: 981px;
+  overflow: visible;
+  position: absolute;
+  top: 2585px;
+  width: 76px;
+}
+
+.framer-9yp6u .framer-1cwtigi,
+.framer-9yp6u .framer-14wuh1g,
+.framer-9yp6u .framer-1otkocm,
+.framer-9yp6u .framer-hque3l,
+.framer-9yp6u .framer-1ub2vs5,
+.framer-9yp6u .framer-1lmlp80,
+.framer-9yp6u .framer-kdsuow,
+.framer-9yp6u .framer-1o4pf64,
+.framer-9yp6u .framer-1v98ezr,
+.framer-9yp6u .framer-1vddh4e,
+.framer-9yp6u .framer-1jxh0az,
+.framer-9yp6u .framer-tl0c8g,
+.framer-9yp6u .framer-3spayl,
+.framer-9yp6u .framer-pr6tap,
+.framer-9yp6u .framer-11mbtxe,
+.framer-9yp6u .framer-67a52j,
+.framer-9yp6u .framer-1jlydij,
+.framer-9yp6u .framer-1lgtkbi,
+.framer-9yp6u .framer-r14ozy,
+.framer-9yp6u .framer-1u5xamk,
+.framer-9yp6u .framer-15l06hc,
+.framer-9yp6u .framer-g89vd3,
+.framer-9yp6u .framer-np0bzr,
+.framer-9yp6u .framer-13me2so,
+.framer-9yp6u .framer-k0uuvr,
+.framer-9yp6u .framer-j7254z,
+.framer-9yp6u .framer-13e1r9q,
+.framer-9yp6u .framer-1dw19le,
+.framer-9yp6u .framer-n37lka,
+.framer-9yp6u .framer-1sxdc2s,
+.framer-9yp6u .framer-y9xbqj,
+.framer-9yp6u .framer-pgrqra,
+.framer-9yp6u .framer-1rm5hef,
+.framer-9yp6u .framer-1ijl460,
+.framer-9yp6u .framer-76anzd,
+.framer-9yp6u .framer-p765vg,
+.framer-9yp6u .framer-fjjxaz,
+.framer-9yp6u .framer-cupz0h,
+.framer-9yp6u .framer-11z8fre,
+.framer-9yp6u .framer-kq9jrq,
+.framer-9yp6u .framer-thskl9,
+.framer-9yp6u .framer-1xonc72,
+.framer-9yp6u .framer-yvtzk2,
+.framer-9yp6u .framer-mhii2i {
+  aspect-ratio: 1 / 1;
+  background-color: #fff9;
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 3px);
+  overflow: hidden;
+  position: relative;
+  width: 3px;
+}
+
+.framer-9yp6u .framer-tj9ybw {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 446px;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 2802px;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-15fmfa1 {
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 80px;
+  justify-content: center;
+  overflow: visible;
+  padding: 31px 0 31px 20px;
+  position: relative;
+  width: 392px;
+}
+
+.framer-9yp6u .framer-1oh9zb {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-7pn4yu {
+  flex: none;
+  height: 28px;
+  position: relative;
+  width: 28px;
+}
+
+.framer-9yp6u .framer-1ww0kzs {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 18px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: rgba(0, 0, 0, 0.4);
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-2b4f57 {
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: #f1582e;
+  border-radius: 6px;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 27px 24px;
+  position: relative;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-1sjemig {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 20px;
+  --framer-font-style: normal;
+  --framer-font-weight: 800;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-1tgazab {
+  flex: none;
+  height: 333px;
+  left: -25px;
+  overflow: visible;
+  position: absolute;
+  top: 2642px;
+  transform: rotate(-30deg);
+  width: 197px;
+}
+
+.framer-9yp6u .framer-1ftwy1c,
+.framer-9yp6u .framer-16aydnd {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 25px;
+  overflow: hidden;
+  position: absolute;
+  top: 245px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-upy70f,
+.framer-9yp6u .framer-15a4uos {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 112px;
+  overflow: hidden;
+  position: absolute;
+  top: 92px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-sc7t44,
+.framer-9yp6u .framer-viqweq {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 33px;
+  left: 55px;
+  overflow: hidden;
+  position: absolute;
+  top: 215px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1gopr4f,
+.framer-9yp6u .framer-12pcapv {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 18px;
+  left: 41px;
+  overflow: hidden;
+  position: absolute;
+  top: 313px;
+  transform: rotate(31deg);
+  width: 12px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-15srfu2,
+.framer-9yp6u .framer-f2e5ni {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 33px;
+  left: 75px;
+  overflow: hidden;
+  position: absolute;
+  top: 123px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-s0qasf,
+.framer-9yp6u .framer-1bf3ttm {
+  background-color: #ffffff1a;
+  border-radius: 200px;
+  flex: none;
+  height: 33px;
+  left: 142px;
+  overflow: hidden;
+  position: absolute;
+  top: 62px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1nsjpvn,
+.framer-9yp6u .framer-y0cfo3 {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 78px;
+  overflow: hidden;
+  position: absolute;
+  top: 153px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1dtzjrw,
+.framer-9yp6u .framer-1ae7jdd {
+  background-color: #ffffff1a;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 165px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-zi8b6z,
+.framer-9yp6u .framer-127tipa {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 14px;
+  overflow: hidden;
+  position: absolute;
+  top: 220px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-o9tdzl,
+.framer-9yp6u .framer-5fdt40 {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 101px;
+  overflow: hidden;
+  position: absolute;
+  top: 67px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-vganvn,
+.framer-9yp6u .framer-1agojq0 {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 51px;
+  overflow: hidden;
+  position: absolute;
+  top: 153px;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1aa2y1n,
+.framer-9yp6u .framer-1pvkjrj {
+  background-color: #ffffff1a;
+  border-radius: 200px;
+  flex: none;
+  height: 60px;
+  left: 138px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 18px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1sutahj {
+  flex: none;
+  height: 333px;
+  left: 1251px;
+  overflow: visible;
+  position: absolute;
+  top: 2685px;
+  transform: rotate(-30deg);
+  width: 197px;
+}
+
+.framer-9yp6u .framer-9d9596 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 406px;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 2666px;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-htsmiy {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 36px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-hh9umj {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 20px;
+  --framer-font-style: normal;
+  --framer-font-weight: 500;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: center;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: 42px;
+  overflow: hidden;
+  position: relative;
+  white-space: pre-wrap;
+  width: 556px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.framer-9yp6u .framer-yvkysz {
+  flex: none;
+  height: 876px;
+  left: -93px;
+  overflow: visible;
+  position: absolute;
+  top: 3000px;
+  width: 1533px;
+}
+
+.framer-9yp6u .framer-1ebb6bg {
+  background-color: #fefcf3;
+  flex: none;
+  height: 672px;
+  left: 93px;
+  overflow: hidden;
+  position: absolute;
+  top: 197px;
+  width: 1440px;
+}
+
+.framer-9yp6u .framer-1uybd65 {
+  flex: none;
+  height: 679px;
+  left: 93px;
+  overflow: hidden;
+  position: absolute;
+  top: 197px;
+  width: 395px;
+}
+
+.framer-9yp6u .framer-11lxj85 {
+  aspect-ratio: 3.8125 / 1;
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 48px);
+  left: 803px;
+  overflow: hidden;
+  position: absolute;
+  top: 276px;
+  width: 183px;
+}
+
+.framer-9yp6u .framer-1g37agv {
+  flex: none;
+  height: 270px;
+  left: 529px;
+  overflow: visible;
+  position: absolute;
+  top: 463px;
+  width: 172px;
+}
+
+.framer-9yp6u .framer-19395xq {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 57px;
+  overflow: visible;
+  padding: 10px;
+  position: absolute;
+  top: 59px;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-3axkzh,
+.framer-9yp6u .framer-1o6usc0,
+.framer-9yp6u .framer-1ea440z,
+.framer-9yp6u .framer-1cey57a,
+.framer-9yp6u .framer-mfb1ia {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 16px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: rgba(0, 0, 0, 0.5);
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-tdkfg6,
+.framer-9yp6u .framer-b3acvu,
+.framer-9yp6u .framer-1wi6w9q {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-1ar4yct,
+.framer-9yp6u .framer-nxuqhs,
+.framer-9yp6u .framer-1oaknl7 {
+  flex: none;
+  height: 51px;
+  position: relative;
+  width: 51px;
+}
+
+.framer-9yp6u .framer-1duy00b {
+  flex: none;
+  height: 23px;
+  overflow: visible;
+  position: relative;
+  width: 105px;
+}
+
+.framer-9yp6u .framer-x1tfkm {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 20px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #665844;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 0;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-9cogno {
+  flex: none;
+  height: 4px;
+  left: 537px;
+  position: absolute;
+  top: 397px;
+  width: 833px;
+}
+
+.framer-9yp6u .framer-1l7i04w {
+  flex: none;
+  height: 237px;
+  left: 797px;
+  overflow: visible;
+  position: absolute;
+  top: 463px;
+  width: 228px;
+}
+
+.framer-9yp6u .framer-1biy75p,
+.framer-9yp6u .framer-lvi0b6 {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 20px;
+  --framer-font-style: normal;
+  --framer-font-weight: 700;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #665844;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-zngp4y,
+.framer-9yp6u .framer-3q6gbm {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 67px;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 69px;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-mjglp6,
+.framer-9yp6u .framer-1oisywr,
+.framer-9yp6u .framer-85qdsn,
+.framer-9yp6u .framer-1mpbax9,
+.framer-9yp6u .framer-9n1bwq {
+  align-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-1ypbs2g,
+.framer-9yp6u .framer-u4h4rv,
+.framer-9yp6u .framer-hj01gl,
+.framer-9yp6u .framer-jfjw9c {
+  flex: none;
+  height: 25px;
+  position: relative;
+  width: 24px;
+}
+
+.framer-9yp6u .framer-xf2fit,
+.framer-9yp6u .framer-186b0i0,
+.framer-9yp6u .framer-r974wv,
+.framer-9yp6u .framer-bvlw00,
+.framer-9yp6u .framer-8ro7ju,
+.framer-9yp6u .framer-9ufsre {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 16px;
+  --framer-font-style: normal;
+  --framer-font-weight: 600;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 1.2em;
+  --framer-text-alignment: left;
+  --framer-text-color: #7f7e7a;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-1ldvi31 {
+  align-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: min-content;
+}
+
+.framer-9yp6u .framer-14pfuwy {
+  flex: none;
+  height: 141px;
+  left: 1119px;
+  overflow: visible;
+  position: absolute;
+  top: 463px;
+  width: 249px;
+}
+
+.framer-9yp6u .framer-1cgstkc {
+  flex: none;
+  height: 48px;
+  left: 1119px;
+  overflow: visible;
+  position: absolute;
+  top: 776px;
+  width: 93px;
+}
+
+.framer-9yp6u .framer-1egdg5y,
+.framer-9yp6u .framer-xwe1j5 {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: 5px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.0941176414489746px;
+  position: absolute;
+  top: 0;
+  width: 93px;
+}
+
+.framer-9yp6u .framer-wekwk0,
+.framer-9yp6u .framer-182ujpn,
+.framer-9yp6u .framer-1yy8uko,
+.framer-9yp6u .framer-11c1f5e,
+.framer-9yp6u .framer-1ipevax,
+.framer-9yp6u .framer-11mvrr9,
+.framer-9yp6u .framer-vanm1m,
+.framer-9yp6u .framer-kelivc,
+.framer-9yp6u .framer-1fcrl1y,
+.framer-9yp6u .framer-1yvm26j,
+.framer-9yp6u .framer-diu4v5,
+.framer-9yp6u .framer-1pcpycy,
+.framer-9yp6u .framer-e0l8n8,
+.framer-9yp6u .framer-1ajprb8,
+.framer-9yp6u .framer-3n31bg,
+.framer-9yp6u .framer-unlx0y,
+.framer-9yp6u .framer-5maehu,
+.framer-9yp6u .framer-1984zyh,
+.framer-9yp6u .framer-4778uz,
+.framer-9yp6u .framer-1374xb7,
+.framer-9yp6u .framer-wv4e67,
+.framer-9yp6u .framer-7hieyr,
+.framer-9yp6u .framer-w499td,
+.framer-9yp6u .framer-nqwhve,
+.framer-9yp6u .framer-oz0qk2,
+.framer-9yp6u .framer-lj3wok,
+.framer-9yp6u .framer-rrernz,
+.framer-9yp6u .framer-x6hd1s,
+.framer-9yp6u .framer-tfc78v,
+.framer-9yp6u .framer-1jwx6d9,
+.framer-9yp6u .framer-o00j5x,
+.framer-9yp6u .framer-l1anqj,
+.framer-9yp6u .framer-4xe5vj,
+.framer-9yp6u .framer-p0u5un,
+.framer-9yp6u .framer-16lea0r,
+.framer-9yp6u .framer-hg6708,
+.framer-9yp6u .framer-qfe2ga,
+.framer-9yp6u .framer-zuvffn,
+.framer-9yp6u .framer-t7tz5f,
+.framer-9yp6u .framer-1vhetak,
+.framer-9yp6u .framer-1xbtuwq,
+.framer-9yp6u .framer-c8szf2,
+.framer-9yp6u .framer-13c7s1t,
+.framer-9yp6u .framer-v0bn80,
+.framer-9yp6u .framer-h0jbom,
+.framer-9yp6u .framer-1p7kt60,
+.framer-9yp6u .framer-1clgchg,
+.framer-9yp6u .framer-pxce80,
+.framer-9yp6u .framer-1b1hok7,
+.framer-9yp6u .framer-1tk5atd,
+.framer-9yp6u .framer-jcxt3s,
+.framer-9yp6u .framer-1d6gjvg,
+.framer-9yp6u .framer-1smttwi,
+.framer-9yp6u .framer-m07a1e,
+.framer-9yp6u .framer-1ieamtj,
+.framer-9yp6u .framer-ddrhcr,
+.framer-9yp6u .framer-1px3vcy,
+.framer-9yp6u .framer-5wtuem,
+.framer-9yp6u .framer-1dghmsd,
+.framer-9yp6u .framer-1cpim2a,
+.framer-9yp6u .framer-y1sd1j,
+.framer-9yp6u .framer-1775ue5,
+.framer-9yp6u .framer-ozwvqp,
+.framer-9yp6u .framer-1e0atzr,
+.framer-9yp6u .framer-gfog43,
+.framer-9yp6u .framer-198rdpj,
+.framer-9yp6u .framer-r1y0zd,
+.framer-9yp6u .framer-1y1b3if,
+.framer-9yp6u .framer-1d77ffp,
+.framer-9yp6u .framer-mar8jr,
+.framer-9yp6u .framer-16na25n,
+.framer-9yp6u .framer-8tccup,
+.framer-9yp6u .framer-uz0iy,
+.framer-9yp6u .framer-k74zdx,
+.framer-9yp6u .framer-qp4l01,
+.framer-9yp6u .framer-n89zr,
+.framer-9yp6u .framer-1ehextb,
+.framer-9yp6u .framer-luf6q4,
+.framer-9yp6u .framer-1rpg3si,
+.framer-9yp6u .framer-1lw6cwg,
+.framer-9yp6u .framer-1sas56s,
+.framer-9yp6u .framer-c37uvf,
+.framer-9yp6u .framer-ho9vuk,
+.framer-9yp6u .framer-1r6u2ug,
+.framer-9yp6u .framer-3du9bx,
+.framer-9yp6u .framer-9q6vyi,
+.framer-9yp6u .framer-1hdbi64,
+.framer-9yp6u .framer-1xgwbq7 {
+  aspect-ratio: 1 / 1;
+  background-color: #66584433;
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 3px);
+  overflow: hidden;
+  position: relative;
+  width: 3px;
+}
+
+.framer-9yp6u .framer-xo4zb5,
+.framer-9yp6u .framer-1iqlckv {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: 5px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.0941176414489746px;
+  position: absolute;
+  top: 14px;
+  width: 93px;
+}
+
+.framer-9yp6u .framer-1fgkfpq,
+.framer-9yp6u .framer-1i5u21u {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: 5px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.0941176414489746px;
+  position: absolute;
+  top: 28px;
+  width: 93px;
+}
+
+.framer-9yp6u .framer-18nayfh,
+.framer-9yp6u .framer-16lb94j {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: 5px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: visible;
+  padding: 1.0941176414489746px;
+  position: absolute;
+  top: 43px;
+  width: 93px;
+}
+
+.framer-9yp6u .framer-1synkeq {
+  flex: none;
+  height: 376px;
+  left: 80px;
+  overflow: visible;
+  position: absolute;
+  top: 384px;
+  transform: rotate(-30deg);
+  width: 223px;
+}
+
+.framer-9yp6u .framer-srpt8n,
+.framer-9yp6u .framer-jfv1vh {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 28px;
+  overflow: hidden;
+  position: absolute;
+  top: 277px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1qwslbs,
+.framer-9yp6u .framer-1p36131 {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 126px;
+  overflow: hidden;
+  position: absolute;
+  top: 104px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-u99zu0,
+.framer-9yp6u .framer-kt3efq {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 37px;
+  left: 62px;
+  overflow: hidden;
+  position: absolute;
+  top: 242px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-7ggq36,
+.framer-9yp6u .framer-k5r9fj {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 21px;
+  left: 46px;
+  overflow: hidden;
+  position: absolute;
+  top: 354px;
+  transform: rotate(31deg);
+  width: 13px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1ds8kau,
+.framer-9yp6u .framer-146hpng {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 37px;
+  left: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: 139px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-otb2ay,
+.framer-9yp6u .framer-1urky5n {
+  background-color: #ffffff1a;
+  border-radius: 200px;
+  flex: none;
+  height: 37px;
+  left: 160px;
+  overflow: hidden;
+  position: absolute;
+  top: 70px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-w3sofr,
+.framer-9yp6u .framer-hqvuzr {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: 173px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-64yvt9,
+.framer-9yp6u .framer-1s2bdo1 {
+  background-color: #ffffff1a;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 186px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-jsw37v,
+.framer-9yp6u .framer-1wru0ac {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 16px;
+  overflow: hidden;
+  position: absolute;
+  top: 249px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-4yq6us,
+.framer-9yp6u .framer-1xtql74 {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 114px;
+  overflow: hidden;
+  position: absolute;
+  top: 76px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-2sbpiu,
+.framer-9yp6u .framer-6qu8ss {
+  background-color: #fff3;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 58px;
+  overflow: hidden;
+  position: absolute;
+  top: 173px;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-pigeed,
+.framer-9yp6u .framer-sa00ry {
+  background-color: #ffffff1a;
+  border-radius: 200px;
+  flex: none;
+  height: 68px;
+  left: 156px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 21px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-gglwgb {
+  flex: none;
+  height: 252px;
+  left: 738px;
+  overflow: visible;
+  position: absolute;
+  top: 2px;
+  transform: rotate(60deg);
+  width: 149px;
+}
+
+.framer-9yp6u .framer-1kqijpg {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 19px;
+  overflow: hidden;
+  position: absolute;
+  top: 186px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1jk303i {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: 70px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-iurrb6 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 25px;
+  left: 41px;
+  overflow: hidden;
+  position: absolute;
+  top: 162px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-135xtko {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 14px;
+  left: 31px;
+  overflow: hidden;
+  position: absolute;
+  top: 237px;
+  transform: rotate(31deg);
+  width: 9px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1l92a5m {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 25px;
+  left: 57px;
+  overflow: hidden;
+  position: absolute;
+  top: 93px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1v4k3a3 {
+  background-color: #f1582e1a;
+  border-radius: 200px;
+  flex: none;
+  height: 25px;
+  left: 107px;
+  overflow: hidden;
+  position: absolute;
+  top: 47px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-iv9iab {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 59px;
+  overflow: hidden;
+  position: absolute;
+  top: 116px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1m0w07c {
+  background-color: #f1582e1a;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 125px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1he5bd2 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 167px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1u84247 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 77px;
+  overflow: hidden;
+  position: absolute;
+  top: 51px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-16i3sd3 {
+  background-color: #f1582e33;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 39px;
+  overflow: hidden;
+  position: absolute;
+  top: 116px;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1sadwt4 {
+  background-color: #f1582e1a;
+  border-radius: 200px;
+  flex: none;
+  height: 46px;
+  left: 105px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform: rotate(31deg);
+  width: 14px;
+  will-change: transform;
+}
+
+.framer-9yp6u .framer-1830qs7 {
+  flex: none;
+  height: 48px;
+  left: 539px;
+  overflow: visible;
+  position: absolute;
+  top: 276px;
+  width: 93px;
+}
+
+.framer-9yp6u .framer-1tk16ft {
+  --framer-font-family: "Raleway", serif;
+  --framer-font-size: 56px;
+  --framer-font-style: normal;
+  --framer-font-weight: 800;
+  --framer-letter-spacing: 0px;
+  --framer-line-height: 40px;
+  --framer-text-alignment: left;
+  --framer-text-color: #ffffff;
+  --framer-text-decoration: none;
+  --framer-text-transform: none;
+  flex: none;
+  height: auto;
+  left: 85px;
+  overflow: visible;
+  position: absolute;
+  top: 1233px;
+  white-space: pre;
+  width: auto;
+}
+
+.framer-9yp6u .framer-jzgad {
+  flex: none;
+  height: 376px;
+  left: 284px;
+  overflow: visible;
+  position: absolute;
+  top: 1114px;
+  transform: rotate(-30deg);
+  width: 223px;
+}
+
+@supports (background: -webkit-named-image(i)) and (not (scale: 1)) {
+  .framer-9yp6u .framer-1ay8419,
+  .framer-9yp6u .framer-1l1r0k7,
+  .framer-9yp6u .framer-olsrtt,
+  .framer-9yp6u .framer-1295tko,
+  .framer-9yp6u .framer-ssnpl9,
+  .framer-9yp6u .framer-byjv1x,
+  .framer-9yp6u .framer-cljd91,
+  .framer-9yp6u .framer-1p424m0,
+  .framer-9yp6u .framer-1h4qf7z,
+  .framer-9yp6u .framer-2cxdve,
+  .framer-9yp6u .framer-rrj16o,
+  .framer-9yp6u .framer-zhn1ow,
+  .framer-9yp6u .framer-49y0s7,
+  .framer-9yp6u .framer-x2e13c,
+  .framer-9yp6u .framer-nsgrxq,
+  .framer-9yp6u .framer-t60cte,
+  .framer-9yp6u .framer-1lahoc1,
+  .framer-9yp6u .framer-w8adn6,
+  .framer-9yp6u .framer-1uxcae7,
+  .framer-9yp6u .framer-lzi7qc,
+  .framer-9yp6u .framer-fdi15i,
+  .framer-9yp6u .framer-df75vg,
+  .framer-9yp6u .framer-orx3zc,
+  .framer-9yp6u .framer-1iavpkk,
+  .framer-9yp6u .framer-tj9ybw,
+  .framer-9yp6u .framer-15fmfa1,
+  .framer-9yp6u .framer-1oh9zb,
+  .framer-9yp6u .framer-2b4f57,
+  .framer-9yp6u .framer-9d9596,
+  .framer-9yp6u .framer-19395xq,
+  .framer-9yp6u .framer-tdkfg6,
+  .framer-9yp6u .framer-b3acvu,
+  .framer-9yp6u .framer-zngp4y,
+  .framer-9yp6u .framer-mjglp6,
+  .framer-9yp6u .framer-1oisywr,
+  .framer-9yp6u .framer-85qdsn,
+  .framer-9yp6u .framer-1ldvi31,
+  .framer-9yp6u .framer-1wi6w9q,
+  .framer-9yp6u .framer-3q6gbm,
+  .framer-9yp6u .framer-1mpbax9,
+  .framer-9yp6u .framer-9n1bwq,
+  .framer-9yp6u .framer-1egdg5y,
+  .framer-9yp6u .framer-xo4zb5,
+  .framer-9yp6u .framer-1fgkfpq,
+  .framer-9yp6u .framer-18nayfh,
+  .framer-9yp6u .framer-xwe1j5,
+  .framer-9yp6u .framer-1iqlckv,
+  .framer-9yp6u .framer-1i5u21u,
+  .framer-9yp6u .framer-16lb94j {
+    gap: 0px;
+  }
+  .framer-9yp6u .framer-1ay8419 > * {
+    margin: 0;
+  }
+  .framer-9yp6u .framer-1ay8419 > :first-child,
+  .framer-9yp6u .framer-15fmfa1 > :first-child,
+  .framer-9yp6u .framer-9d9596 > :first-child,
+  .framer-9yp6u .framer-19395xq > :first-child,
+  .framer-9yp6u .framer-zngp4y > :first-child,
+  .framer-9yp6u .framer-3q6gbm > :first-child {
+    margin-top: 0;
+  }
+  .framer-9yp6u .framer-1ay8419 > :last-child,
+  .framer-9yp6u .framer-15fmfa1 > :last-child,
+  .framer-9yp6u .framer-9d9596 > :last-child,
+  .framer-9yp6u .framer-19395xq > :last-child,
+  .framer-9yp6u .framer-zngp4y > :last-child,
+  .framer-9yp6u .framer-3q6gbm > :last-child {
+    margin-bottom: 0;
+  }
+  .framer-9yp6u .framer-1l1r0k7 > * {
+    margin: 0 455px;
+  }
+  .framer-9yp6u .framer-1l1r0k7 > :first-child,
+  .framer-9yp6u .framer-olsrtt > :first-child,
+  .framer-9yp6u .framer-1295tko > :first-child,
+  .framer-9yp6u .framer-ssnpl9 > :first-child,
+  .framer-9yp6u .framer-byjv1x > :first-child,
+  .framer-9yp6u .framer-cljd91 > :first-child,
+  .framer-9yp6u .framer-1p424m0 > :first-child,
+  .framer-9yp6u .framer-1h4qf7z > :first-child,
+  .framer-9yp6u .framer-2cxdve > :first-child,
+  .framer-9yp6u .framer-rrj16o > :first-child,
+  .framer-9yp6u .framer-zhn1ow > :first-child,
+  .framer-9yp6u .framer-49y0s7 > :first-child,
+  .framer-9yp6u .framer-x2e13c > :first-child,
+  .framer-9yp6u .framer-nsgrxq > :first-child,
+  .framer-9yp6u .framer-t60cte > :first-child,
+  .framer-9yp6u .framer-1lahoc1 > :first-child,
+  .framer-9yp6u .framer-w8adn6 > :first-child,
+  .framer-9yp6u .framer-1uxcae7 > :first-child,
+  .framer-9yp6u .framer-lzi7qc > :first-child,
+  .framer-9yp6u .framer-fdi15i > :first-child,
+  .framer-9yp6u .framer-df75vg > :first-child,
+  .framer-9yp6u .framer-orx3zc > :first-child,
+  .framer-9yp6u .framer-1iavpkk > :first-child,
+  .framer-9yp6u .framer-tj9ybw > :first-child,
+  .framer-9yp6u .framer-1oh9zb > :first-child,
+  .framer-9yp6u .framer-2b4f57 > :first-child,
+  .framer-9yp6u .framer-tdkfg6 > :first-child,
+  .framer-9yp6u .framer-b3acvu > :first-child,
+  .framer-9yp6u .framer-mjglp6 > :first-child,
+  .framer-9yp6u .framer-1oisywr > :first-child,
+  .framer-9yp6u .framer-85qdsn > :first-child,
+  .framer-9yp6u .framer-1ldvi31 > :first-child,
+  .framer-9yp6u .framer-1wi6w9q > :first-child,
+  .framer-9yp6u .framer-1mpbax9 > :first-child,
+  .framer-9yp6u .framer-9n1bwq > :first-child,
+  .framer-9yp6u .framer-1egdg5y > :first-child,
+  .framer-9yp6u .framer-xo4zb5 > :first-child,
+  .framer-9yp6u .framer-1fgkfpq > :first-child,
+  .framer-9yp6u .framer-18nayfh > :first-child,
+  .framer-9yp6u .framer-xwe1j5 > :first-child,
+  .framer-9yp6u .framer-1iqlckv > :first-child,
+  .framer-9yp6u .framer-1i5u21u > :first-child,
+  .framer-9yp6u .framer-16lb94j > :first-child {
+    margin-left: 0;
+  }
+  .framer-9yp6u .framer-1l1r0k7 > :last-child,
+  .framer-9yp6u .framer-olsrtt > :last-child,
+  .framer-9yp6u .framer-1295tko > :last-child,
+  .framer-9yp6u .framer-ssnpl9 > :last-child,
+  .framer-9yp6u .framer-byjv1x > :last-child,
+  .framer-9yp6u .framer-cljd91 > :last-child,
+  .framer-9yp6u .framer-1p424m0 > :last-child,
+  .framer-9yp6u .framer-1h4qf7z > :last-child,
+  .framer-9yp6u .framer-2cxdve > :last-child,
+  .framer-9yp6u .framer-rrj16o > :last-child,
+  .framer-9yp6u .framer-zhn1ow > :last-child,
+  .framer-9yp6u .framer-49y0s7 > :last-child,
+  .framer-9yp6u .framer-x2e13c > :last-child,
+  .framer-9yp6u .framer-nsgrxq > :last-child,
+  .framer-9yp6u .framer-t60cte > :last-child,
+  .framer-9yp6u .framer-1lahoc1 > :last-child,
+  .framer-9yp6u .framer-w8adn6 > :last-child,
+  .framer-9yp6u .framer-1uxcae7 > :last-child,
+  .framer-9yp6u .framer-lzi7qc > :last-child,
+  .framer-9yp6u .framer-fdi15i > :last-child,
+  .framer-9yp6u .framer-df75vg > :last-child,
+  .framer-9yp6u .framer-orx3zc > :last-child,
+  .framer-9yp6u .framer-1iavpkk > :last-child,
+  .framer-9yp6u .framer-tj9ybw > :last-child,
+  .framer-9yp6u .framer-1oh9zb > :last-child,
+  .framer-9yp6u .framer-2b4f57 > :last-child,
+  .framer-9yp6u .framer-tdkfg6 > :last-child,
+  .framer-9yp6u .framer-b3acvu > :last-child,
+  .framer-9yp6u .framer-mjglp6 > :last-child,
+  .framer-9yp6u .framer-1oisywr > :last-child,
+  .framer-9yp6u .framer-85qdsn > :last-child,
+  .framer-9yp6u .framer-1ldvi31 > :last-child,
+  .framer-9yp6u .framer-1wi6w9q > :last-child,
+  .framer-9yp6u .framer-1mpbax9 > :last-child,
+  .framer-9yp6u .framer-9n1bwq > :last-child,
+  .framer-9yp6u .framer-1egdg5y > :last-child,
+  .framer-9yp6u .framer-xo4zb5 > :last-child,
+  .framer-9yp6u .framer-1fgkfpq > :last-child,
+  .framer-9yp6u .framer-18nayfh > :last-child,
+  .framer-9yp6u .framer-xwe1j5 > :last-child,
+  .framer-9yp6u .framer-1iqlckv > :last-child,
+  .framer-9yp6u .framer-1i5u21u > :last-child,
+  .framer-9yp6u .framer-16lb94j > :last-child {
+    margin-right: 0;
+  }
+  .framer-9yp6u .framer-olsrtt > *,
+  .framer-9yp6u .framer-2b4f57 > *,
+  .framer-9yp6u .framer-1ldvi31 > * {
+    margin: 0 5px;
+  }
+  .framer-9yp6u .framer-1295tko > *,
+  .framer-9yp6u .framer-ssnpl9 > *,
+  .framer-9yp6u .framer-byjv1x > *,
+  .framer-9yp6u .framer-cljd91 > * {
+    margin: 0;
+    margin-left: calc(7.5387701988220215px / 2);
+    margin-right: calc(7.5387701988220215px / 2);
+  }
+  .framer-9yp6u .framer-1p424m0 > *,
+  .framer-9yp6u .framer-1h4qf7z > *,
+  .framer-9yp6u .framer-2cxdve > *,
+  .framer-9yp6u .framer-rrj16o > *,
+  .framer-9yp6u .framer-zhn1ow > *,
+  .framer-9yp6u .framer-49y0s7 > *,
+  .framer-9yp6u .framer-x2e13c > *,
+  .framer-9yp6u .framer-nsgrxq > *,
+  .framer-9yp6u .framer-1lahoc1 > *,
+  .framer-9yp6u .framer-w8adn6 > *,
+  .framer-9yp6u .framer-1uxcae7 > *,
+  .framer-9yp6u .framer-lzi7qc > *,
+  .framer-9yp6u .framer-fdi15i > *,
+  .framer-9yp6u .framer-df75vg > *,
+  .framer-9yp6u .framer-orx3zc > *,
+  .framer-9yp6u .framer-1iavpkk > * {
+    margin: 0;
+    margin-left: calc(4.470588207244873px / 2);
+    margin-right: calc(4.470588207244873px / 2);
+  }
+  .framer-9yp6u .framer-t60cte > * {
+    margin: 0 30px;
+  }
+  .framer-9yp6u .framer-tj9ybw > * {
+    margin: 0 2px;
+  }
+  .framer-9yp6u .framer-15fmfa1 > * {
+    margin: 5px 0;
+  }
+  .framer-9yp6u .framer-1oh9zb > *,
+  .framer-9yp6u .framer-tdkfg6 > *,
+  .framer-9yp6u .framer-b3acvu > *,
+  .framer-9yp6u .framer-1wi6w9q > * {
+    margin: 0 8px;
+  }
+  .framer-9yp6u .framer-9d9596 > * {
+    margin: 10px 0;
+  }
+  .framer-9yp6u .framer-19395xq > *,
+  .framer-9yp6u .framer-zngp4y > *,
+  .framer-9yp6u .framer-3q6gbm > * {
+    margin: 12px 0;
+  }
+  .framer-9yp6u .framer-mjglp6 > *,
+  .framer-9yp6u .framer-1oisywr > *,
+  .framer-9yp6u .framer-85qdsn > *,
+  .framer-9yp6u .framer-1mpbax9 > *,
+  .framer-9yp6u .framer-9n1bwq > * {
+    margin: 0 4px;
+  }
+  .framer-9yp6u .framer-1egdg5y > *,
+  .framer-9yp6u .framer-xo4zb5 > *,
+  .framer-9yp6u .framer-1fgkfpq > *,
+  .framer-9yp6u .framer-18nayfh > *,
+  .framer-9yp6u .framer-xwe1j5 > *,
+  .framer-9yp6u .framer-1iqlckv > *,
+  .framer-9yp6u .framer-1i5u21u > *,
+  .framer-9yp6u .framer-16lb94j > * {
+    margin: 0;
+    margin-left: calc(5.470588207244873px / 2);
+    margin-right: calc(5.470588207244873px / 2);
+  }
+}
