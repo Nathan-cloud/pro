@@ -3097,7 +3097,38 @@
     background-repeat: no-repeat;
    }
 
-   
+   .absolute-side-background-about-left{
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    width: 45%;
+    height: 95vh;
+    max-height: 650px;
+    margin-right: 0px;
+    border-bottom-left-radius: 7em;
+    background-image:url('../img/bg-left.png');
+    background-position: left;
+    background-size: 95%;
+    background-repeat: no-repeat;
+
+   }
+   .absolute-side-background-about-left{
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    width: 45%;
+    height: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    
+    border-bottom-left-radius: 0em;
+  
+   }
    .absolute-side-background-about.large-left {
      left: 0%;
      top: 40px;
@@ -3854,7 +3885,7 @@
    }
    
    .join-the-community {
-     padding-left: 100px;
+    
      -webkit-box-flex: 1;
      -webkit-flex: 1;
      -ms-flex: 1;
@@ -6358,7 +6389,7 @@
      .join-the-community {
        padding-top: 84px;
        padding-right: 20px;
-       padding-left: 20px;
+       
      }
    
      .form-block {
