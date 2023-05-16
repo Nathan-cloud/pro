@@ -5543,7 +5543,7 @@
    }
    
    @media screen and (max-width: 991px) {
-    .absolute-side-background-about-left, .absolute-side-background-about.large-left{
+    .absolute-side-background-about-left{
       display: none;
     }
    
@@ -6089,6 +6089,9 @@
    }
    
    @media screen and (max-width: 767px) {
+    .absolute-side-background-about.large-left{
+      display: none;
+    }
     .full-width-image{
       background-size: cover;
     }
